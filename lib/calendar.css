@@ -1,0 +1,24 @@
+
+.calendar-table {
+  border: 1px solid #eee;
+  padding: 5px;
+  margin: 5px;
+}
+
+.calendar-table .prev-day,
+.calendar-table .next-day {
+  color: #999;
+}
+
+.calendar-table td {
+  text-align: center;
+}
+
+.calendar-table .selected {
+  background: #0085CC;
+  color: white;
+}
+
+.calendar-table td {
+  user-select: none;
+}

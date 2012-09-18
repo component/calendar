@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Calendar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../build/build.css" type="text/css">
+    <style>
+      body {
+        font: 14px "Helvetica Neue", Helvetica, Arial;
+        padding: 80px;
+        color: #333;
+      }
+      a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 3px;
+      }
+      a:hover {
+        background: #efefef;
+      }
+      a:active {
+        opacity: .75;
+      }
+      .calendar-table {
+        float: left;
+        font-size: 13px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px #eee;
+        border-bottom: 1px solid #ddd;
+      }
+      .calendar-table .selected {
+        background: none;
+      }
+      .calendar-table .selected a {
+        background: -webkit-linear-gradient(#76aaef, #0085CC);
+        background: -moz-linear-gradient(#76aaef, #0085CC);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calendar</h1>
+    <script src="../build/build.js"></script>
+    <script>
+      var Calendar = require('calendar');
+      var one = new Calendar;
+
+      one.on('next', function(){
+        two.next();
+      });
+
+      one.on('prev', function(){
+        two.prev();
+      });
+
+      one.on('change', function(date){
+        console.log('selected: %s of %s %s',
+          date.getDate(),
+          date.getMonth(),
+          date.getFullYear());
+
+        date.setMonth(date.getMonth() + 1);
+        two.select(date);
+      });
+
+      one.el.appendTo('body');
+
+
+
+      var two = new Calendar;
+      two.el.appendTo('body');
+      two.next();
+    </script>
+  </body>
+</html>

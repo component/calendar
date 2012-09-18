@@ -1,0 +1,22 @@
+{
+  "name": "calendar",
+  "repo": "component/calendar",
+  "description": "Calendar component",
+  "version": "0.0.1",
+  "keywords": ["calendar", "date", "ui"],
+  "development": {
+    "component/jquery": "*",
+    "component/emitter": "*",
+    "component/in-groups-of": "*"
+  },
+  "styles": [
+    "lib/calendar.css"
+  ],
+  "scripts": [
+    "index.js",
+    "lib/utils.js",
+    "lib/template.js",
+    "lib/calendar.js",
+    "lib/days.js"
+  ]
+}
