@@ -48,6 +48,12 @@ cal.el.appendTo('body');
 
   Show the next view (month).
 
+## Themes
+
+  [Aurora](https://github.com/component/aurora-calendar):
+
+  ![](https://a248.e.akamai.net/camo.github.com/2ca4c0ffd16267155335b2d9285c1923fa90e6d3/687474703a2f2f662e636c2e6c792f6974656d732f3034334e31723065314c313330793136325232662f53637265656e25323053686f74253230323031322d30392d31372532306174253230392e31372e3332253230504d2e706e67)
+
 # License
 
   MIT
