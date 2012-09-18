@@ -4,10 +4,13 @@
   "description": "Calendar component",
   "version": "0.0.1",
   "keywords": ["calendar", "date", "ui"],
-  "development": {
+  "dependencies": {
     "component/jquery": "*",
     "component/emitter": "*",
     "component/in-groups-of": "*"
+  },
+  "development": {
+    "component/aurora-calendar": "*"
   },
   "styles": [
     "lib/calendar.css"
