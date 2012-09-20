@@ -31,9 +31,9 @@
           date.getDate(),
           date.getMonth(),
           date.getFullYear());
-
-        date.setMonth(date.getMonth() + 1);
-        two.select(date);
+        var newDate = new Date(date);
+        newDate.setMonth(date.getMonth() + 1);
+        two.select(newDate);
       });
 
       one.el.appendTo('body');
