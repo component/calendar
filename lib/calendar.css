@@ -14,11 +14,6 @@
   text-align: center;
 }
 
-.calendar-table .selected {
-  background: #0085CC;
-  color: white;
-}
-
 .calendar-table td {
   user-select: none;
 }
