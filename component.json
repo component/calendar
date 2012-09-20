@@ -2,7 +2,7 @@
   "name": "calendar",
   "repo": "component/calendar",
   "description": "Calendar component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["calendar", "date", "ui"],
   "dependencies": {
     "component/jquery": "*",
