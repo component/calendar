@@ -9,6 +9,10 @@
         padding: 80px;
         color: #333;
       }
+      .calendar.small td a {
+        font-size: 10px;
+        padding: 3px;
+      }
     </style>
   </head>
   <body>
@@ -39,6 +43,7 @@
       one.el.appendTo('body');
 
       var two = new Calendar;
+      two.addClass('small');
       two.el.appendTo('body');
       two.next();
     </script>
