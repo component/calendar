@@ -23,7 +23,7 @@
     <script src="../build/build.js"></script>
     <script>
       var Calendar = require('calendar');
-      var one = new Calendar;
+      var one = (new Calendar).canSelectMonth().canSelectYear();
 
       one.on('next', function(){
         two.next();
@@ -31,6 +31,12 @@
 
       one.on('prev', function(){
         two.prev();
+      });
+
+      one.on('view change', function(date){
+        var twoDate = new Date(date);
+        twoDate.setMonth(date.getMonth() + 1)
+        two.show(twoDate);
       });
 
       one.on('change', function(date){
