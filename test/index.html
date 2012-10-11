@@ -23,15 +23,15 @@
     <script src="../build/build.js"></script>
     <script>
       var Calendar = require('calendar');
-      var one = (new Calendar).canSelectMonth().canSelectYear();
+      var one = (new Calendar).monthMenu().yearMenu();
 
-      one.on('next', function(){
-        two.next();
-      });
+      // one.on('next', function(){
+      //   two.next();
+      // });
 
-      one.on('prev', function(){
-        two.prev();
-      });
+      // one.on('prev', function(){
+      //   two.prev();
+      // });
 
       one.on('view change', function(date){
         var twoDate = new Date(date);

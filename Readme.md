@@ -22,7 +22,9 @@ cal.el.appendTo('body');
 
   - `prev` when the prev link is clicked
   - `next` when the next link is clicked
-  - `view change` (date) when the month/year dropdowns are changed
+  - `month change` (number) when the month dropdown is changed
+  - `year change` (number) when the year dropdown is changed
+  - `view change` (date) when the viewed month/year is changed, either by next/prev or dropdown menu
   - `change` (date) when the selected date is modified
 
 ## API
@@ -41,13 +43,13 @@ cal.el.appendTo('body');
   Show the given `date`. This does _not_ select the given date,
   it simply ensures that it is visible in the current view.
 
-### Calendar#canSelectMonth()
+### Calendar#monthMenu()
 
-  Adds a month dropdown to allow jumping to selected month.
+  Adds a month dropdown menu to allow jumping to selected month.
 
-### Calendar#selectYear([from], [to])
+### Calendar#yearMenu([from], [to])
 
-  Adds a year dropdown to allow jumping to selected year. `From` specifies the first year shown in the dropdown and `to` the last year. This means that if `to` is less than `from`, the years will be listed in descending order.
+  Adds a year dropdown menu to allow jumping to selected year. `From` specifies the first year shown in the dropdown and `to` the last year. This means that if `to` is less than `from`, the years will be listed in descending order.
 
   If `from`/`to` are both not specified the dropdown defaults to -/+ 10 years from the calendar's date.
 
