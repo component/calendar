@@ -23,14 +23,13 @@
     <script src="../build/build.js"></script>
     <script>
       var Calendar = require('calendar');
-      var one = new Calendar;
+      var one = (new Calendar).monthMenu().yearMenu();
 
-      one.on('next', function(){
-        two.next();
-      });
-
-      one.on('prev', function(){
-        two.prev();
+      one.on('view change', function(date, action){
+        console.log(action);
+        var twoDate = new Date(date);
+        twoDate.setMonth(date.getMonth() + 1)
+        two.show(twoDate);
       });
 
       one.on('change', function(date){
