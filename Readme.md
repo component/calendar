@@ -20,11 +20,7 @@ cal.el.appendTo('body');
 
 ## Events
 
-  - `prev` when the prev link is clicked
-  - `next` when the next link is clicked
-  - `month change` (number) when the month dropdown is changed
-  - `year change` (number) when the year dropdown is changed
-  - `view change` (date) when the viewed month/year is changed, either by next/prev or dropdown menu
+  - `view change` (date, action) when the viewed month/year is changed without modification of the selected date. This can be done either by next/prev buttons or dropdown menu. The action will be "prev", "next", "month" or "year" depending on what action caused the view to change.
   - `change` (date) when the selected date is modified
 
 ## API
