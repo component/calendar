@@ -26,7 +26,7 @@
       var one = new Calendar().showMonthSelect().showYearSelect();
 
       one.on('view change', function(date, action){
-        console.log(action);
+        console.log('change %s', action);
         var twoDate = new Date(date);
         twoDate.setMonth(date.getMonth() + 1)
         two.show(twoDate);
