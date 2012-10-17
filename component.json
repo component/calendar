@@ -5,6 +5,7 @@
   "version": "0.0.3",
   "keywords": ["calendar", "date", "ui"],
   "dependencies": {
+    "component/range": "*",
     "component/jquery": "*",
     "component/emitter": "*",
     "component/in-groups-of": "*"
