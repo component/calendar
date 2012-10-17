@@ -39,17 +39,14 @@ cal.el.appendTo('body');
   Show the given `date`. This does _not_ select the given date,
   it simply ensures that it is visible in the current view.
 
-### Calendar#monthMenu()
+### Calendar#showMonthSelect()
 
-  Adds a month dropdown menu to allow jumping to selected month.
+  Add month selection input.
 
-### Calendar#yearMenu([from], [to])
+### Calendar#showYearSelect([from], [to])
 
-  Adds a year dropdown menu to allow jumping to selected year. `From` specifies the first year shown in the dropdown and `to` the last year. This means that if `to` is less than `from`, the years will be listed in descending order.
-
-  If `from`/`to` are both not specified the dropdown defaults to -/+ 10 years from the calendar's date.
-
-  If only `from` specified it defaults `to` +20 years from that year.
+  Add year selection input, with optional range specified by `from` and `to`,
+  which default to the current year -10 / +10.
 
 ### Calendar#prev()
 

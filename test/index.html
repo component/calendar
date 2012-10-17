@@ -23,7 +23,7 @@
     <script src="../build/build.js"></script>
     <script>
       var Calendar = require('calendar');
-      var one = new Calendar().monthMenu().yearMenu();
+      var one = new Calendar().showMonthSelect().showYearSelect();
 
       one.on('view change', function(date, action){
         console.log(action);
