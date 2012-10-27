@@ -3,7 +3,11 @@
   "repo": "component/calendar",
   "description": "Calendar component",
   "version": "0.0.3",
-  "keywords": ["calendar", "date", "ui"],
+  "keywords": [
+    "calendar",
+    "date",
+    "ui"
+  ],
   "dependencies": {
     "component/range": "*",
     "component/jquery": "*",
@@ -22,5 +26,6 @@
     "lib/template.js",
     "lib/calendar.js",
     "lib/days.js"
-  ]
+  ],
+  "license": "MIT"
 }
