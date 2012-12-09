@@ -2,16 +2,35 @@
   <head>
     <title>Calendar</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="../build/build.css" type="text/css">
+    <link rel="stylesheet" href="build/build.css" type="text/css">
     <style>
       body {
         font: 14px "Helvetica Neue", Helvetica, Arial;
         padding: 80px;
         color: #333;
       }
+      
+      .calendar.large {
+        float: left;
+        clear: both;
+      }
+      
+      .calendar.large tbody td {
+        padding: 50px;
+        border: 1px solid #eee;
+        position: relative;
+      }
+      
+      .calendar.large tbody a {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+      
       .calendar.small th {
         font-size: 10px;
       }
+      
       .calendar.small td a {
         font-size: 10px;
         padding: 3px;
@@ -20,7 +39,7 @@
   </head>
   <body>
     <h1>Calendar</h1>
-    <script src="../build/build.js"></script>
+    <script src="build/build.js"></script>
     <script>
       var Calendar = require('calendar');
       var one = new Calendar().showMonthSelect().showYearSelect();
@@ -44,10 +63,14 @@
 
       one.el.appendTo('body');
 
-      var two = new Calendar;
-      two.addClass('small');
-      two.el.appendTo('body');
-      two.next();
+      var small = new Calendar;
+      small.addClass('small');
+      small.el.appendTo('body');
+      small.next();
+      
+      var large = new Calendar;
+      large.addClass('large');
+      large.el.appendTo('body');
     </script>
   </body>
 </html>
