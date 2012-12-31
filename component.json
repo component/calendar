@@ -11,6 +11,7 @@
   "dependencies": {
     "component/range": "*",
     "component/domify": "*",
+    "component/classes": "*",
     "component/emitter": "*",
     "component/in-groups-of": "*"
   },
