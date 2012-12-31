@@ -6,7 +6,8 @@
   "dependencies": {
     "domify-component": "*",
     "emitter-component": "*",
-    "in-groups-of": "*"
+    "in-groups-of": "*",
+    "classes-component": "*"
   },
   "component": {
     "styles": ["lib/calendar.css"],
