@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "component/range": "*",
-    "component/jquery": "*",
+    "component/domify": "*",
     "component/emitter": "*",
     "component/in-groups-of": "*"
   },
