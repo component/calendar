@@ -4,9 +4,10 @@
   "version": "0.0.3",
   "keywords": ["calendar", "date", "ui"],
   "dependencies": {
-    "jquery-component": "*",
+    "domify-component": "*",
     "emitter-component": "*",
-    "in-groups-of": "*"
+    "in-groups-of": "*",
+    "classes-component": "*"
   },
   "component": {
     "styles": ["lib/calendar.css"],
