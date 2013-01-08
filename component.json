@@ -10,9 +10,12 @@
   ],
   "dependencies": {
     "component/range": "*",
-    "component/jquery": "*",
     "component/emitter": "*",
-    "component/in-groups-of": "*"
+    "component/in-groups-of": "*",
+    "component/domify": "*",
+    "component/classes": "*",
+    "component/event": "*",
+    "javve/get-by-class": "*"
   },
   "development": {
     "component/aurora-calendar": "*"
