@@ -9,6 +9,7 @@
     "ui"
   ],
   "dependencies": {
+    "code42day/bounds": "*",
     "component/bind": "*",
     "component/domify": "*",
     "component/classes": "*",
@@ -17,6 +18,7 @@
     "component/range": "1.0.0",
     "component/emitter": "1.0.0",
     "component/in-groups-of": "1.0.0",
+    "component/type": "*",
     "yields/empty": "*",
     "stephenmathieson/normalize": "*"
   },
@@ -31,6 +33,7 @@
     "lib/utils.js",
     "lib/template.js",
     "lib/calendar.js",
+    "lib/dayrange.js",
     "lib/days.js"
   ],
   "license": "MIT"
