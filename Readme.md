@@ -56,6 +56,14 @@ cal.el.appendTo('body');
 
   Show the next view (month).
 
+### Calendar#min()
+
+  Define earliest valid date - calendar won't generate `change` events for dates before this one.
+
+### Calendar#max()
+
+  Define latest valid date - calendar won't generate `change` events for dates after this one.
+
 ## Themes
 
   [Aurora](https://github.com/component/aurora-calendar):
