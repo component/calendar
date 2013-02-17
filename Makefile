@@ -17,4 +17,8 @@ lib/template.js: lib/template.html
 clean:
 	rm -fr build components lib/template.js
 
-.PHONY: clean
+test:
+	@./node_modules/.bin/mocha \
+		--reporter spec
+
+.PHONY: clean test
