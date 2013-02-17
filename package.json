@@ -36,5 +36,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/component/calendar.git"
+  },
+  "devDependencies": {
+    "mocha": "~1"
   }
 }
