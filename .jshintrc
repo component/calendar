@@ -1,0 +1,15 @@
+{
+  "undef": true,
+  "unused": true,
+  "laxbreak": true,
+  "laxcomma": true,
+  "supernew": true,
+  "globals": {
+    "console": false,
+    "describe": false,
+    "exports": false,
+    "it": false,
+    "module": false,
+    "require": false
+  }
+}
