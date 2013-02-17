@@ -35,6 +35,12 @@
         font-size: 10px;
         padding: 3px;
       }
+
+      .calendar td a.invalid {
+        opacity: .2;
+        background-color: rgba(0, 0, 0, .2);
+        cursor: default;
+      }
     </style>
   </head>
   <body>
@@ -71,6 +77,11 @@
       var large = new Calendar;
       large.addClass('large');
       large.el.appendTo('body');
+
+      var restricted = new Calendar(new Date(2004, 6, 11))
+        .min(new Date(2004, 5, 12))
+        .max([2004, 7, 19]);
+      restricted.el.appendTo('body');
     </script>
   </body>
 </html>
