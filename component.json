@@ -10,8 +10,11 @@
   ],
   "dependencies": {
     "component/range": "*",
-    "component/jquery": "*",
     "component/emitter": "*",
+    "component/domify": "*",
+    "component/classes": "*",
+    "component/delegate": "*",
+    "component/event": "*",
     "component/in-groups-of": "*"
   },
   "development": {
