@@ -25,6 +25,7 @@
     "lib/utils.js",
     "lib/template.js",
     "lib/calendar.js",
+    "lib/dayrange.js",
     "lib/days.js"
   ],
   "license": "MIT"
