@@ -13,8 +13,7 @@
     "component/emitter": "*",
     "component/domify": "*",
     "component/classes": "*",
-    "component/delegate": "*",
-    "component/event": "*",
+    "component/delegates": "*",
     "component/in-groups-of": "*"
   },
   "development": {
