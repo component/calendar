@@ -48,7 +48,7 @@
         console.log('change %s', action);
         var twoDate = new Date(date);
         twoDate.setMonth(date.getMonth() + 1)
-        two.show(twoDate);
+        small.show(twoDate);
       });
 
       one.on('change', function(date){
@@ -58,19 +58,19 @@
           date.getFullYear());
         var newDate = new Date(date);
         newDate.setMonth(date.getMonth() + 1);
-        two.select(newDate);
+        small.select(newDate);
       });
 
-      one.el.appendTo('body');
+      document.body.appendChild(one.el);
 
       var small = new Calendar;
       small.addClass('small');
-      small.el.appendTo('body');
+      document.body.appendChild(small.el);
       small.next();
       
       var large = new Calendar;
       large.addClass('large');
-      large.el.appendTo('body');
+      document.body.appendChild(large.el);
     </script>
   </body>
 </html>

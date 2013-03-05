@@ -1,8 +1,8 @@
 
 SRC = index.js	\
 	lib/template.js	\
-	lib/Calendar.js	\
-	lib/Days.js \
+	lib/calendar.js	\
+	lib/days.js \
 	lib/calendar.css
 
 build: components $(SRC)
