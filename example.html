@@ -48,7 +48,7 @@
         console.log('change %s', action);
         var twoDate = new Date(date);
         twoDate.setMonth(date.getMonth() + 1)
-        two.show(twoDate);
+        small.show(twoDate);
       });
 
       one.on('change', function(date){
@@ -58,7 +58,7 @@
           date.getFullYear());
         var newDate = new Date(date);
         newDate.setMonth(date.getMonth() + 1);
-        two.select(newDate);
+        large.select(newDate);
       });
 
       one.el.appendTo('body');
