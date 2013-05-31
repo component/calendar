@@ -9,10 +9,10 @@
     "ui"
   ],
   "dependencies": {
-    "component/range": "*",
+    "component/range": "0.0.1",
     "component/jquery": "*",
-    "component/emitter": "*",
-    "component/in-groups-of": "*"
+    "component/emitter": "1.0.0",
+    "component/in-groups-of": "0.0.1"
   },
   "development": {
     "component/aurora-calendar": "*"
