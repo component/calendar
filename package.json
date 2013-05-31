@@ -1,7 +1,7 @@
 {
   "name": "calendar-component",
   "description": "Calendar component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": ["calendar", "date", "ui"],
   "dependencies": {
     "jquery-component": "*",
