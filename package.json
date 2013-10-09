@@ -2,14 +2,20 @@
   "name": "calendar-component",
   "description": "Calendar component",
   "version": "0.0.4",
-  "keywords": ["calendar", "date", "ui"],
+  "keywords": [
+    "calendar",
+    "date",
+    "ui"
+  ],
   "dependencies": {
     "jquery-component": "*",
     "emitter-component": "*",
     "in-groups-of": "*"
   },
   "component": {
-    "styles": ["lib/calendar.css"],
+    "styles": [
+      "lib/calendar.css"
+    ],
     "scripts": {
       "calendar/index.js": "index.js",
       "calendar/lib/utils.js": "lib/utils.js",
@@ -17,5 +23,9 @@
       "calendar/lib/calendar.js": "lib/calendar.js",
       "calendar/lib/days.js": "lib/days.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/calendar.git"
   }
 }
