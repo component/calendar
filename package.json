@@ -8,9 +8,17 @@
     "ui"
   ],
   "dependencies": {
-    "jquery-component": "*",
-    "emitter-component": "*",
-    "in-groups-of": "*"
+    "domify": "1.0.0",
+    "emitter-component": "1.0.1",
+    "classes-component": "1.1.3",
+    "range-component": "1.0.0",
+    "dom-events": "0.1.1",
+    "in-groups-of": "component/in-groups-of#1.0.0"
+  },
+  "browser": {
+    "emitter": "emitter-component",
+    "classes": "classes-component",
+    "range": "range-component"
   },
   "component": {
     "styles": [
