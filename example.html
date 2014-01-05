@@ -9,28 +9,28 @@
         padding: 80px;
         color: #333;
       }
-      
+
       .calendar.large {
         float: left;
         clear: both;
       }
-      
+
       .calendar.large tbody td {
         padding: 50px;
         border: 1px solid #eee;
         position: relative;
       }
-      
+
       .calendar.large tbody a {
         position: absolute;
         top: 5px;
         right: 5px;
       }
-      
+
       .calendar.small th {
         font-size: 10px;
       }
-      
+
       .calendar.small td a {
         font-size: 10px;
         padding: 3px;
@@ -61,16 +61,16 @@
         large.select(newDate);
       });
 
-      one.el.appendTo('body');
+      document.body.appendChild(one.el);
 
       var small = new Calendar;
       small.addClass('small');
-      small.el.appendTo('body');
+      document.body.appendChild(small.el);
       small.next();
-      
+
       var large = new Calendar;
       large.addClass('large');
-      large.el.appendTo('body');
+      document.body.appendChild(large.el);
     </script>
   </body>
 </html>
