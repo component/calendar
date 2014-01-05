@@ -12,10 +12,11 @@
     "emitter-component": "1.0.1",
     "classes-component": "1.1.3",
     "range-component": "1.0.0",
-    "dom-events": "0.1.1",
-    "in-groups-of": "component/in-groups-of#1.0.0"
+    "in-groups-of": "component/in-groups-of#1.0.0",
+    "event-component": "~0.1.0"
   },
   "browser": {
+    "event": "event-component",
     "emitter": "emitter-component",
     "classes": "classes-component",
     "range": "range-component"
