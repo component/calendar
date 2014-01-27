@@ -9,12 +9,16 @@
     "ui"
   ],
   "dependencies": {
+    "component/bind": "*",
     "component/domify": "*",
     "component/classes": "*",
     "component/event": "*",
+    "component/map": "*",
     "component/range": "1.0.0",
     "component/emitter": "1.0.0",
-    "component/in-groups-of": "1.0.0"
+    "component/in-groups-of": "1.0.0",
+    "yields/empty": "*",
+    "stephenmathieson/normalize": "*"
   },
   "development": {
     "component/aurora-calendar": "*"
