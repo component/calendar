@@ -17,3 +17,7 @@
 .calendar-table td {
   user-select: none;
 }
+
+.calendar-table td a {
+  cursor: pointer;
+}
