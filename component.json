@@ -36,5 +36,6 @@
     "lib/dayrange.js",
     "lib/days.js"
   ],
+  "demo": "http://component.github.io/calendar/",
   "license": "MIT"
 }
