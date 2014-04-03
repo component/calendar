@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="build/build.css" type="text/css">
+    <style>
+      body {
+        font: 14px "Helvetica Neue", Helvetica, Arial;
+        padding: 80px;
+        color: #333;
+      }
+
+      .calendar.large {
+        float: left;
+        clear: both;
+      }
+
+      .calendar.large tbody td {
+        padding: 50px;
+        border: 1px solid #eee;
+        position: relative;
+      }
+
+      .calendar.large tbody a {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+
+      .calendar.small th {
+        font-size: 10px;
+      }
+
+      .calendar.small td a {
+        font-size: 10px;
+        padding: 3px;
+      }
+
+      .calendar td a.invalid {
+        opacity: .2;
+        background-color: rgba(0, 0, 0, .2);
+        cursor: default;
+      }
+
+      #restricted {
+        clear: left;
+      }
+      #restricted .calendar {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calendar</h1>
+    <div id='standard'></div>
+    <div id='restricted'></div>
+    <script src="build/build.js"></script>
+    <script>
+      var Calendar = require('calendar');
+      var one = new Calendar().showMonthSelect().showYearSelect();
+
+      one.on('view change', function(date, action){
+        console.log('change %s', action);
+        var twoDate = new Date(date);
+        twoDate.setMonth(date.getMonth() + 1)
+        small.show(twoDate);
+      });
+
+      one.on('change', function(date){
+        console.log('selected: %s of %s %s',
+          date.getDate(),
+          date.getMonth(),
+          date.getFullYear());
+        var newDate = new Date(date);
+        newDate.setMonth(date.getMonth() + 1);
+        large.select(newDate);
+      });
+
+      var container = document.querySelector('#standard');
+      container.appendChild(one.el);
+
+      var small = new Calendar;
+      small.addClass('small');
+      container.appendChild(small.el);
+      small.next();
+
+      var large = new Calendar;
+      large.addClass('large');
+      container.appendChild(large.el);
+
+
+      container = document.querySelector('#restricted');
+      var restricted = new Calendar(new Date(2004, 6, 11))
+        .min(new Date(2004, 5, 12))
+        .max([2004, 7, 19])
+        .select(new Date(2004, 7, 19));
+      container.appendChild(restricted.el);
+      restricted = new Calendar(new Date(2004, 6, 11))
+        .max(new Date(2004, 5, 12))
+        .min([2004, 5, 18])
+        .show(new Date(2004, 5, 19));
+      container.appendChild(restricted.el);
+    </script>
+  </body>
+</html>
