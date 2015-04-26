@@ -85,8 +85,14 @@
       container.appendChild(small.el);
       small.next();
 
+      var frLocale = {
+        months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+        weekdaysMin : 'Di_Lu_Ma_Me_Je_Ve_Sa'.split('_'),
+      };
       var large = new Calendar;
-      large.addClass('large');
+      large
+        .addClass('large')
+        .locale(frLocale);
       container.appendChild(large.el);
 
 
