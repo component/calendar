@@ -31,10 +31,12 @@
   "scripts": [
     "index.js",
     "lib/utils.js",
-    "lib/template.js",
     "lib/calendar.js",
     "lib/dayrange.js",
     "lib/days.js"
+  ],
+  "templates": [
+    "lib/template.html"
   ],
   "demo": "http://component.github.io/calendar/",
   "license": "MIT"
