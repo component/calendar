@@ -66,11 +66,17 @@ cal.el.appendTo('body');
 
   Define latest valid date - calendar won't generate `change` events for dates after this one.
 
+### Calendar#locale({months, weekdaysMin})
+
+  Set alternative locale:
+  - `months` - an array of 12 strings representing month names _January..December_.
+  - `weekdaysMin` - an array of 7 strings representing day names shortcuts _Sunday..Saturday_
+
 ## Themes
 
   [Aurora](https://github.com/component/aurora-calendar):
 
-  ![](https://a248.e.akamai.net/camo.github.com/2ca4c0ffd16267155335b2d9285c1923fa90e6d3/687474703a2f2f662e636c2e6c792f6974656d732f3034334e31723065314c313330793136325232662f53637265656e25323053686f74253230323031322d30392d31372532306174253230392e31372e3332253230504d2e706e67)
+  ![](http://f.cl.ly/items/043N1r0e1L130y162R2f/Screen%20Shot%202012-09-17%20at%209.17.32%20PM.png)
 
 # License
 

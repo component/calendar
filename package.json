@@ -38,8 +38,9 @@
     "url": "https://github.com/component/calendar.git"
   },
   "devDependencies": {
-    "mocha": "~1",
     "bounds": "~1.0.0",
+    "jshint": "^2.7.0",
+    "mocha": "~1",
     "type-component": "0.0.1"
   }
 }

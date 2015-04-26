@@ -1,24 +1,23 @@
-
 SRC = index.js	\
-	lib/template.js	\
 	lib/calendar.js	\
-	lib/days.js \
-	lib/calendar.css
+	lib/days.js
 
-build: components $(SRC)
+all: lint test build
+
+build: $(SRC) lib/template.html lib/calendar.css | components
 	@component build --dev
 
 components:
 	@component install --dev
 
-lib/template.js: lib/template.html
-	@component convert $<
-
 clean:
-	rm -fr build components lib/template.js
+	rm -fr build components
+
+lint:
+	@./node_modules/.bin/jshint $(SRC)
 
 test:
 	@./node_modules/.bin/mocha \
 		--reporter spec
 
-.PHONY: clean test
+.PHONY: clean test lint all
