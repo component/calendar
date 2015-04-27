@@ -1,4 +1,10 @@
 
+0.2.0 / 2015-04-27
+==================
+
+ * enable changing locales for calendar
+ * use component templates to translate HTML
+
 0.1.0 / 2014-04-02
 ==================
 
